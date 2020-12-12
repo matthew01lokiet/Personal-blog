@@ -1,0 +1,12 @@
+<h2 style="text-align: center;">👇 Archive Tags 👇</h2>
+{% capture temptags %}
+  {% for tag in site.tags %}
+    {{ tag[1].size | plus: 1000 }}#{{ tag[0] }}#{{ tag[1].size }}
+  {% endfor %}
+{% endcapture %}
+{% assign sortedtemptags = temptags | split:' ' | sort | reverse %}
+{% for temptag in sortedtemptags %}
+  {% assign tagitems = temptag | split: '#' %}
+  {% capture tagname %}{{ tagitems[1] }}{% endcapture %}
+  <a href="/tag/{{ tagname }}"><code style="background-color: rgb(81, 198, 202); border-radius: 5px; padding: 5px;"><nobr>{{ tagname }}</nobr></code></a>
+{% endfor %}
