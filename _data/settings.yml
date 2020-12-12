@@ -13,9 +13,9 @@ menu_settings:
     - title: 'Projects'
       url: '/projects/'
     - title: 'About'
-      url: '/about/'
+      url: '/about.html/'
     - title: 'Contact'
-      url: '/contact/'
+      url: '/contact.html/'
 
 footer_settings:
   footer_tagline: 
@@ -28,7 +28,7 @@ post_settings:
 
 contact_settings:
   form_action: 'https://formspree.io/f/mnqozkog'
-  confirmation_url: '{{site.baseurl}}/thanks/'
+  confirmation_url: '/thanks.html/'
   email_subject: 'Contact form submission'
   send_button_text: 'Send Message'
 
