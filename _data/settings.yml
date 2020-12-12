@@ -9,13 +9,13 @@ header_settings:
 menu_settings:
   menu_items:
     - title: 'Blog'
-      url: '{{site.baseurl}}/'
+      url: '/'
     - title: 'Projects'
-      url: '{{site.baseurl}}/projects/'
+      url: '/projects/'
     - title: 'About'
-      url: '{{site.baseurl}}/about/'
+      url: '/about/'
     - title: 'Contact'
-      url: '{{site.baseurl}}/contact/'
+      url: '/contact/'
 
 footer_settings:
   footer_tagline: 

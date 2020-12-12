@@ -1,7 +1,7 @@
 site: Java Endless Journey
 
 url: 
-baseurl: /Personal-blog
+baseurl: "/Personal-blog"
 
 collections:
   pages:

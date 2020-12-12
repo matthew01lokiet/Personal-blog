@@ -5,7 +5,7 @@ description: Personal information about me.
 featured_image: /images/about_me.jpg
 ---
 
-<img src="/images/logo.png" style=" width: 20%;">
+<img src="{{site.baseurl}}/images/logo.png" style=" width: 20%;">
 <hr>
 ### Hello World! 👋
 My name is Mateusz Łokietek, and I’m a junior software developer focused on java web technologies. <br>
