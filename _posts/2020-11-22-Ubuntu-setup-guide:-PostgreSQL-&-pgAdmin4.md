@@ -28,7 +28,7 @@ Resultingly you will see some output. PostgreSQL packages shall be installed by 
 
 <div style="text-align: center; color: black;"><b>Output:</b></div>
 <div class="gallery" data-columns="1">
-	<img src="/images/posts/postgresqlAndPgAdmin4/systemctl_output.png">
+	<img src="{{site.baseurl}}/images/posts/postgresqlAndPgAdmin4/systemctl_output.png">
 </div>
 
 You can also check if your database is accepting incoming connections on the PostgreSQL default port (5432):
@@ -40,7 +40,7 @@ You can also check if your database is accepting incoming connections on the Pos
 
 <div style="text-align: center; color: black;"><b>Output:</b></div>
 <div class="gallery" data-columns="1">
-    <img src="/images/posts/postgresqlAndPgAdmin4/accepting_connections.png">
+    <img src="{{site.baseurl}}/images/posts/postgresqlAndPgAdmin4/accepting_connections.png">
 </div>
 
 
@@ -84,7 +84,7 @@ In a terminal run:
 You should get access to the database, which will be indicated by a screen like this:
 
 <div class="gallery" data-columns="1">
-	<img src="/images/posts/postgresqlAndPgAdmin4/postgres_out.png">
+	<img src="{{site.baseurl}}/images/posts/postgresqlAndPgAdmin4/postgres_out.png">
 </div>
 
 Now, without exiting, provide a password to secure access to your database by running:
@@ -131,7 +131,7 @@ You will be prompted for a password (which you've set up in previous steps).<br>
 Provide it; if everything goes correctly, you should get access to the database:
 
 <div class="gallery" data-columns="1">
-	<img src="/images/posts/postgresqlAndPgAdmin4/postgres_pass.png">
+	<img src="{{site.baseurl}}/images/posts/postgresqlAndPgAdmin4/postgres_pass.png">
 </div>
 
 Exit with:
@@ -184,7 +184,7 @@ It will configure the Apache Web server on your machine and enable the WSGI modu
 Also, to access the pgAdmin4 panel, you will be asked to create an account:
 
 <div class="gallery" data-columns="1">
-	<img src="/images/posts/postgresqlAndPgAdmin4/pgadmin4_script.png">
+	<img src="{{site.baseurl}}/images/posts/postgresqlAndPgAdmin4/pgadmin4_script.png">
 </div>
 
 After the script stopped running you will be able to access the pgAdmin4 panel through <br><span class="file_path"> 127.0.0.1/pgadmin4 </span> URL in your browser.
@@ -192,7 +192,7 @@ After the script stopped running you will be able to access the pgAdmin4 panel t
 The landing page should look like this:
 
 <div class="gallery" data-columns="1">
-	<img src="/images/posts/postgresqlAndPgAdmin4/landing_page.png">
+	<img src="{{site.baseurl}}/images/posts/postgresqlAndPgAdmin4/landing_page.png">
 </div>
 
 Log in with credentials you have set up in <span class="inline_text">setup-web.sh</span> script.
@@ -200,7 +200,7 @@ Log in with credentials you have set up in <span class="inline_text">setup-web.s
 You will be redirected to the administration panel page:
 
 <div class="gallery" data-columns="1">
-	<img src="/images/posts/postgresqlAndPgAdmin4/redirect_pgadmin4.png">
+	<img src="{{site.baseurl}}/images/posts/postgresqlAndPgAdmin4/redirect_pgadmin4.png">
 </div>
 
 We are near the end, do not retreat! 
@@ -209,13 +209,13 @@ The only thing you must do now is creating a connection between PostgreSQL runni
 To make things work, find the option for creating a new server connection:
 
 <div class="gallery" data-columns="1">
-	<img src="/images/posts/postgresqlAndPgAdmin4/server_creation.png">
+	<img src="{{site.baseurl}}/images/posts/postgresqlAndPgAdmin4/server_creation.png">
 </div>
 
 On the newly opened window, provide a name for your server (whatever, it doesn’t affect anything important), then go to the next tab <span class="inline_text">Connection</span> :
 
 <div class="gallery" data-columns="1">
-	<img src="/images/posts/postgresqlAndPgAdmin4/creating_conn.png">
+	<img src="{{site.baseurl}}/images/posts/postgresqlAndPgAdmin4/creating_conn.png">
 </div>
 
 There as <span class="inline_text">Host name/address</span> you should input <span class="inline_text">localhost</span> and as <span class="inline_text">Username</span>
@@ -224,7 +224,7 @@ There as <span class="inline_text">Host name/address</span> you should input <sp
 Everything should run smoothly, and after choosing your server from the list on the left, it will be populated with different properties associated with your running database:
 
 <div class="gallery" data-columns="1">
-	<img src="/images/posts/postgresqlAndPgAdmin4/ending_im.png">
+	<img src="{{site.baseurl}}/images/posts/postgresqlAndPgAdmin4/ending_im.png">
 </div>
 
 #### Hurra!

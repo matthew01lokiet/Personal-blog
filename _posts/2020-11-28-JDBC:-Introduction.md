@@ -35,7 +35,7 @@ I hope this quick introduction gave you some confidence, so you won't be afraid 
 To begin with, you should create a new <span class="inline_text">Maven project</span> inside the <span class="inline_text">IntelliJ IDEA</span> environment:
 
 <div class="gallery" data-columns="1">
-	<img src="/images/posts/jdbc/project_creation.png">
+	<img src="{{site.baseurl}}/images/posts/jdbc/project_creation.png">
 </div>
 
 We won't be using any archetypes, so leave <span class="inline_text">Create from archetype</span> option blank and move on.
@@ -44,13 +44,13 @@ Name your project as you wish, it doesn't really matter.
 The reason I wanted to use <span class="inline_text">Maven</span> is that it will save you some time by letting you include PostgreSQL JDBC drivers with the only couple of lines. Instead of explicit need to manually download drivers, just make use of the dependency system by changing <span class="inline_text">pom.xml</span> from this:
 
 <div class="gallery" data-columns="1">
-	<img src="/images/posts/jdbc/first_screen.png">
+	<img src="{{site.baseurl}}/images/posts/jdbc/first_screen.png">
 </div>
 
 To this:
 
 <div class="gallery" data-columns="1">
-    <img src="/images/posts/jdbc/changed_screen.png">
+    <img src="{{site.baseurl}}/images/posts/jdbc/changed_screen.png">
 </div>
 
 Then reload project with <span class="inline_text">Maven</span> and voilà.
@@ -65,31 +65,31 @@ Let’s fix this by using the <span class="inline_text">pgAdmin4</span> panel to
 I’m using PostgreSQL instance running on my local machine, which I’ve set up in the previous post and as a means of access, I will use the previously mentioned pgAdmin4 administration tool through web panel on  <span class="file_path">127.0.0.1 / pgadmin4</span>  URL:
 
 <div class="gallery" data-columns="1">
-    <img src="/images/posts/jdbc/admin_page.png">
+    <img src="{{site.baseurl}}/images/posts/jdbc/admin_page.png">
 </div>
 
 Let’s create a new database:
 
 <div class="gallery" data-columns="1">
-    <img src="/images/posts/jdbc/create_database.png">
+    <img src="{{site.baseurl}}/images/posts/jdbc/create_database.png">
 </div>
 
 I will name it <span class="inline_text">ExampleDatabase</span> (I know, very original):
 
 <div class="gallery" data-columns="1">
-    <img src="/images/posts/jdbc/created_database.png">
+    <img src="{{site.baseurl}}/images/posts/jdbc/created_database.png">
 </div>
 
 In our database, to simulate some real-life example, I will create a table consisting of the client’s info and name it <span class="inline_text">clients</span> by using <span class="inline_text">Query Tool</span>:
 
 <div class="gallery" data-columns="1">
-    <img src="/images/posts/jdbc/create_table.png">
+    <img src="{{site.baseurl}}/images/posts/jdbc/create_table.png">
 </div>
 
 <hr>
 
 <div class="gallery" data-columns="1">
-    <img src="/images/posts/jdbc/create_and_execute.png">
+    <img src="{{site.baseurl}}/images/posts/jdbc/create_and_execute.png">
 </div>
 
 I believe the fields in the created table are self-explanatory, so I won’t cover them in detail.
@@ -97,13 +97,13 @@ I believe the fields in the created table are self-explanatory, so I won’t cov
 After issuing a query, to see changes, move to the left panel and refresh the database:
 
 <div class="gallery" data-columns="1">
-    <img src="/images/posts/jdbc/refresh.png">
+    <img src="{{site.baseurl}}/images/posts/jdbc/refresh.png">
 </div>
 
 Now you should be able to see just created <span class="inline_text">clients</span> table with columns names:
 
 <div class="gallery" data-columns="1">
-    <img src="/images/posts/jdbc/after_exec.png">
+    <img src="{{site.baseurl}}/images/posts/jdbc/after_exec.png">
 </div>
 
 But what’s the use of an empty table?
@@ -111,7 +111,7 @@ But what’s the use of an empty table?
 Let's populate it with something:
 
 <div class="gallery" data-columns="1">
-    <img src="/images/posts/jdbc/inserting_into.png">
+    <img src="{{site.baseurl}}/images/posts/jdbc/inserting_into.png">
 </div>
 
 
@@ -303,7 +303,7 @@ When we run it:
 
 <div style="text-align: center; color: black;"><b>Output:</b></div>
 <div class="gallery" data-columns="1">
-    <img src="/images/posts/jdbc/results.png">
+    <img src="{{site.baseurl}}/images/posts/jdbc/results.png">
 </div>
 
 And that's it, you have successfully connected to the database from a java code and made a query 

@@ -2,7 +2,7 @@
 title: 'GLFP - Github Large Files Packer'
 date: 2020-12-05 00:00:00
 description: A quick overview of my two original bash scripts, which provide the capability to push large files to GitHub for free.
-featured_image: '/images/projects/glfp/project_glfp.png'
+featured_image: 'images/projects/glfp/project_glfp.png'
 ---
 
 ### Why is it useful?
@@ -30,7 +30,7 @@ ls -hl
 
 <div style="text-align: center; color: black;"><b>Output:</b></div>
 <div class="gallery" data-columns="1">
-    <img src="/images/projects/glfp/output_of_ls.png">
+    <img src="{{site.baseurl}}/images/projects/glfp/output_of_ls.png">
 </div>
 
 <hr>
@@ -60,13 +60,13 @@ sudo cp pack unpack /usr/local/bin/
 To show some real-world scenario, I will try to push the 4K video sample to the repository:
 
 <div class="gallery" data-columns="1">
-    <img src="/images/projects/glfp/test_case_mov.png">
+    <img src="{{site.baseurl}}/images/projects/glfp/test_case_mov.png">
 </div>
 
 Repo to be used:
 
 <div class="gallery" data-columns="1">
-    <img src="/images/projects/glfp/test_repo.png">
+    <img src="{{site.baseurl}}/images/projects/glfp/test_repo.png">
 </div>
 
 So let's clone it:
@@ -78,7 +78,7 @@ git clone https://github.com/matthew01lokiet/GLFP-Test
 Current folder content:
 
 <div class="gallery" data-columns="1">
-    <img src="/images/projects/glfp/content_ins.png">
+    <img src="{{site.baseurl}}/images/projects/glfp/content_ins.png">
 </div>
 
 To include video sample in the repository and be able to push later, we make use of the <span class="inline_text">pack</span> script:
@@ -89,7 +89,7 @@ pack test.mov
 
 <div style="text-align: center; color: black;"><b>Output:</b></div>
 <div class="gallery" data-columns="1">
-    <img src="/images/projects/glfp/after_split.png">
+    <img src="{{site.baseurl}}/images/projects/glfp/after_split.png">
 </div>
 
 #### How it works underneath?
@@ -100,7 +100,7 @@ pack test.mov
 The next thing I will do is put <span class="inline_text">test.mov</span> in my repo folder and try to push:
 
 <div class="gallery" data-columns="1">
-    <img src="/images/projects/glfp/after_all.png">
+    <img src="{{site.baseurl}}/images/projects/glfp/after_all.png">
 </div>
 
 Do not be afraid of the warnings, 100MB file size is still the largest possible to push without explicit need to use Github LFS.
@@ -123,11 +123,11 @@ split -b 50M -d file.tar.gz file
 How my packed 4K video sample looks like inside the repo:
 
 <div class="gallery" data-columns="1">
-    <img src="/images/projects/glfp/repo_one.png">
+    <img src="{{site.baseurl}}/images/projects/glfp/repo_one.png">
 </div>
 
 <div class="gallery" data-columns="1">
-    <img src="/images/projects/glfp/repo_two.png">
+    <img src="{{site.baseurl}}/images/projects/glfp/repo_two.png">
 </div>
 
 As you might remember, the initial <span class="inline_text">test.mov</span> file size was 569MB, so it got partitioned
@@ -140,11 +140,11 @@ files, so they make up our compressed initial file/folder!
 The last but not least, let's revert <span class="inline_text">test.mov</span> file, which current location is inside my local repository:
 
 <div class="gallery" data-columns="1">
-    <img src="/images/projects/glfp/first_step_revert.png">
+    <img src="{{site.baseurl}}/images/projects/glfp/first_step_revert.png">
 </div>
 
 <div class="gallery" data-columns="1">
-    <img src="/images/projects/glfp/second_step_revert.png">
+    <img src="{{site.baseurl}}/images/projects/glfp/second_step_revert.png">
 </div>
 
 To revert file, issue the command in a terminal (your relative location should be inside folder, in which file/folder to be reverted exists):
@@ -155,13 +155,13 @@ unpack test.mov
 
 <div style="text-align: center; color: black;"><b>Output:</b></div>
 <div class="gallery" data-columns="1">
-    <img src="/images/projects/glfp/unpack_output.png">
+    <img src="{{site.baseurl}}/images/projects/glfp/unpack_output.png">
 </div>
 
 After script finished:
 
 <div class="gallery" data-columns="1">
-    <img src="/images/projects/glfp/folder_after_revert.png">
+    <img src="{{site.baseurl}}/images/projects/glfp/folder_after_revert.png">
 </div>
 
 That's it, the same process goes for any other file type or folder.
