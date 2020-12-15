@@ -9,7 +9,7 @@ featured_image: /images/about_me.jpg
 <hr>
 ### Hello World! 👋
 My name is Mateusz Łokietek, and I’m a junior software developer focused on java web technologies. <br>
-Currently living in Szczecin, Poland. Trying to find my first job and get some real-life experience in the IT industry. <br> 
+Currently living in Szczecin, Poland. <br> 
 In a meantime, following news from the web-application security world and learning about various exploitation technics. <br>
 You can contact me either through the <a href="/contact/">'Contact'</a> page or by using the icons below.<br/><br/>
 {% include socials.html %}
