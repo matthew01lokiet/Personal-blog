@@ -1,7 +1,7 @@
 ---
-title: 'Spring Core - IoC & DP'
+title: 'Spring Core - IoC & DI'
 date: 2021-01-02 00:00:00
-description: Theoretical overview of Spring Core main functionalities - Inversion of Control & Dependency Injection.
+description: Theoretical overview of the Spring Core main functionalities - Inversion of Control & Dependency Injection.
 featured_image: '/images/posts/springCoreIoC/spring_core_main.png'
 tags: spring java programming
 ---

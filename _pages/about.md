@@ -35,18 +35,20 @@ You can contact me either through the <a href="/contact/">'Contact'</a> page or 
 
  <img src="https://img.shields.io/badge/Desktop_GUI-Swing-informational?style=flat&logo=java&logoColor=white&color=DAA520" style="display: block; clear:both; margin-left: auto; margin-right: auto; width: 50%;" >
 
- <img src="https://img.shields.io/badge/Java_EE-JSP-informational?style=flat&logo=java&logoColor=white&color=DAA520" style="display: block; clear:both; margin-left: auto; margin-right: auto; width: 50%;" >
-
- <img src="https://img.shields.io/badge/Java_EE-Servlets-informational?style=flat&logo=java&logoColor=white&color=DAA520" style="display: block; clear:both; margin-left: auto; margin-right: auto; width: 50%;" >
-
-
- <hr>
-
-## 📚 Currently learning
-
  <img src="https://img.shields.io/badge/Framework-Spring_Core-informational?style=flat&logo=java&logoColor=white&color=DAA520" style="display: block; clear:both; margin-left: auto; margin-right: auto; width: 50%;" >
 
- <img src="https://img.shields.io/badge/Framework-Spring_MVC-informational?style=flat&logo=java&logoColor=white&color=DAA520" style="display: block; clear:both; margin-left: auto; margin-right: auto; width: 50%;" >
+ <img src="https://img.shields.io/badge/Framework-Spring_Boot-informational?style=flat&logo=java&logoColor=white&color=DAA520" style="display: block; clear:both; margin-left: auto; margin-right: auto; width: 50%;" >
 
  <img src="https://img.shields.io/badge/Framework-Hibernate-informational?style=flat&logo=java&logoColor=white&color=DAA520" style="display: block; clear:both; margin-left: auto; margin-right: auto; width: 50%;" >
+
+ <img src="https://img.shields.io/badge/Framework-Spring_MVC_REST-informational?style=flat&logo=java&logoColor=white&color=DAA520" style="display: block; clear:both; margin-left: auto; margin-right: auto; width: 50%;" >
+
+ <img src="https://img.shields.io/badge/Framework-Spring_Security-informational?style=flat&logo=java&logoColor=white&color=DAA520" style="display: block; clear:both; margin-left: auto; margin-right: auto; width: 50%;" >
+
+ <img src="https://img.shields.io/badge/Framework-Spring_AOP-informational?style=flat&logo=java&logoColor=white&color=DAA520" style="display: block; clear:both; margin-left: auto; margin-right: auto; width: 50%;" >
+
+ <img src="https://img.shields.io/badge/Framework-Spring_DATA_JPA-informational?style=flat&logo=java&logoColor=white&color=DAA520" style="display: block; clear:both; margin-left: auto; margin-right: auto; width: 50%;" >
+
+
+ 
 
