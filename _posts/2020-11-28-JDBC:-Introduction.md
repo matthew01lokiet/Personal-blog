@@ -315,4 +315,4 @@ so you can see that there is no difference in the mechanism of connection betwee
 <hr>
 
 ### Github resources:
-- Maven project used in my post: <a href="https://github.com/matthew01lokiet/Blog-posts-resources/tree/main/jdbc">Link</a>
+- Maven project used in this post: <a href="https://github.com/matthew01lokiet/Blog-posts-resources/tree/main/jdbc">Link</a>
