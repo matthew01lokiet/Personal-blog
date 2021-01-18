@@ -11,7 +11,7 @@ featured_image: /images/about_me.jpg
 My name is Mateusz Łokietek, and I'm a java backend web developer. <br>
 Currently living in Szczecin, Poland. <br> 
 In a meantime, following news from the web-application security world and learning about various exploitation technics. <br>
-You can contact me either through the <a href="/contact/">'Contact'</a> page or by using the icons below.<br/><br/>
+You can contact me either through the <a href="/contact.html">'Contact'</a> page or by using the icons below.<br/><br/>
 {% include socials.html %}
 <hr>
 
