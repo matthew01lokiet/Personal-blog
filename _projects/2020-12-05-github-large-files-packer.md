@@ -46,7 +46,7 @@ Content is as it states:
 - <span class="inline_text">pack</span> - bash executable script, which packs large file/folder; used before pushing to the repository
 - <span class="inline_text">unpack</span> - bash executable script, which reverts packed file/folder to its initial form; used after fetching from the repository 
 
-To make life easier, I will copy the scripts to <span class="file_path">/usr/local/bin/</span> folder, so they will become system-wide accessible:
+To make life easier, I will copy the scripts to <span class="file_path">/usr/local/bin/</span> folder, so they will become user-wide accessible:
 
 ```bash
 sudo cp pack unpack /usr/local/bin/

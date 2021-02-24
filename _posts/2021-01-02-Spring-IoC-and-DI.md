@@ -32,7 +32,7 @@ Take a look at this and compare:
 
 Do you see it now?
 
-The whole idea is - define how a given object should be created and care no more; it's someone's other job to create and manage it.
+The whole idea is - define how a given object should be created and care no more; it's someone's other job to instantiate and manage it.
 
 And this is where <span class="inline_text">Spring</span> shines - he is your good friend who wants to help and manage objects on your behalf!
 
@@ -50,19 +50,19 @@ But why even bother - such a complex system (not complex at all now when you kno
 
 I will answer you - in almost every java application ranging from Big Web-Apps to the projects a little bigger than simple "Hello World"!
 
-In the modern world, even basic ideas implementations can rapidly grow and become a large, unmanageable piece of code, and Spring helps
-by letting us focus on our part of a job and him doing the rest.
+In the modern world, even basic ideas implementations can rapidly grow and become a large, unmanageable piece of code, and <span class="inline_text">Spring</span> helps
+by letting us focus on our part of a job.
 
 Pros of this solution:
 * <b><span style="color: black;">More manageable and configurable app.</span></b>
 * <b><span style="color: black;">Clear data flow overview when you get hang of it.</span></b>
-* <b><span style="color: black;">You focus on your job, Spring focuses on his job - complementary cooperation.</span></b>
+* <b><span style="color: black;">You do your job, Spring does his job - complementary cooperation.</span></b>
 
 There is one last thing we should take into the consideration - and this is <span class="inline_text">Bean Scope and Lifecycle</span>.
 
 ## Bean Scope and Lifecycle
 As you remember, <span class="inline_text">Bean</span> is just a fancy name for the java object created and managed by <span class="inline_text">Spring Container</span>.
-This "<b>managing</b>" (which you might think about like "<b>observing and keeping created bean alive</b>") can take many different forms.
+This "<b>managing</b>" (which you might think about like "<b>observing and keeping created bean alive</b>") can take on many different forms.
 
 To be more specific, Spring provides us with 5 different types of this "<b>bean lifetime management</b>" (known also as <span class="inline_text">Scope</span> in which beans exist):
 1. <b><span style="color: black;">Singleton</span></b> - java object is created only once when we request bean, every other time we will request the bean again, we will get the same instance of the object.
@@ -84,9 +84,9 @@ Furthermore, let's take a look at how the initiation and destruction process of 
 	<img src="{{site.baseurl}}/images/posts/springCoreIoC/bean_lifecycle.png">
 </div>
 
-As you can see, you are not entirely at the mercy of the <span class="inline_text">Spring</span> in the context of the <span class="inline_text">Bean Lifecycle</span> - you can provide two custom methods:
-* <b><span style="color: black;">init()</span></b> method, which will be called moment before bean creation process finished. For instance, you can use it to log the date when the given bean has been created.
-* <b><span style="color: black;">destroy()</span></b> method, which will be called moment before destroying bean and erasing it from Application Context. Useful, if you want to close some external resources that bean might use (for example: database connection).
+As you can see, you are not entirely at the mercy of <span class="inline_text">Spring</span> in the context of the <span class="inline_text">Bean Lifecycle</span> - you can provide custom methods:
+* <b><span style="color: black;">init</span></b> methods, which will be called moment before bean creation process finished. For instance, you can use it to log the date when the given bean has been created.
+* <b><span style="color: black;">destroy</span></b> methods, which will be called moment before destroying bean and erasing it from Application Context. Useful, if you want to close some external resources that bean might use (for example: database connection).
 
 <hr>
 #### Quick note:
@@ -95,7 +95,7 @@ Your custom <span class="inline_text">destroy()</span> method only applies to th
 
 That’s it, you have a full overview of how <b>Spring Core</b> functionalities help our app in terms of keeping everything clean and more configurable.
 
-In the next post, I will focus on a practical aspect of how to implement what we have learned in real world java application.
+In the next post, I will focus on a practical aspect of how to implement what we have learned in the real world java application.
 
 See you next time!
 

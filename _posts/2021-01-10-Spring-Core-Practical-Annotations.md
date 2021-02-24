@@ -198,10 +198,10 @@ public class Ferrari implements Car
 
 That's how <b>Spring</b> will know to register them as beans!
 
-Nonetheless, the question arises - what is an <span class="inline_text">id</span> of such a created bean?
+Nonetheless, the question arises - what is an <span class="inline_text">id</span> of such as created bean?
 
 Without <span class="inline_text">id</span>, we can't even use it later, but we are never providing any distinctive name to be used by bean - 
-so how it work?
+so how it works?
 
 <b>Spring</b> has a simple mechanism that creates a distinctive <span class="inline_text">id</span> of a bean by getting the name of the class which has been 
 annotated with <span class="inline_text">@Component</span> and translating it to the <span class="inline_text">camelCase</span> format.

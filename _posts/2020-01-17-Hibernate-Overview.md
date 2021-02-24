@@ -11,7 +11,7 @@ Not so long ago, the only way to connect the existing java app to a given databa
 was by using <span class="inline_text">JDBC</span>.
 
 It worked, but at the same time, its usage generated a lot of boilerplate code, where
-you had to wrap <b>fetched table records</b> in <b>java objects</b> by yourself and embed <b>SQL queries</b> directly
+you had to wrap <b>fetched table records</b> in the <b>java objects</b> by yourself and embed <b>SQL queries</b> directly
 into your method calls to issue even simple <b>CRUD</b> operations.
 
 You can check my post to see how <span class="inline_text">JDBC</span> works in practise: <a href="https://www.javaendlessjourney.com/blog/jdbc-introduction"> link </a>.
@@ -33,13 +33,13 @@ They've come up with the specification known as <span class="inline_text">JPA</s
 ## Hibernate - the most popular JPA implementation
 So at this point we know that:
 * <b>JPA</b> is just a specification; the template for how should be the <b>ORM</b> mechanism implemented.
-* <b>ORM</b> on his own is only a brief overview of the mechanism, in our case, focused on translating database table row into java object.
+* <b>ORM</b> on his own is only a brief overview of the mechanism, in our case, focused on translating database table row into a java object.
 
-We are missing something - we have a lot of specifications, but we didn't hear about any implementation.
+We are missing something - we have a lot of specifications, but we haven't heard about any implementation.
 
 And this is when <b><span style="color: black;">Hibernate</span></b> arrives.
 
-It's the framework that provides the implementation for <b>JPA</b> specification by extensive usage of <b>ORM</b> mechanism to translate <b>SQL</b> table rows into 
+It's the framework that provides the implementation for <b>JPA</b> specification by extensive usage of <b>ORM</b> mechanism to translate <b>SQL</b> table rows into the
 compatible java objects!
 
 Also, it easies the usage of fundamental queries on the database by having implemented <b>CRUD</b> operations as functions that can be used from start without the explicit need to write your own code.
@@ -49,7 +49,7 @@ Also, it easies the usage of fundamental queries on the database by having imple
 
 <b><span style="color: black;">Session Factory</span></b>:
 * object created once for the whole app.
-* it reads <b>Hibernate</b> config file, that have been set up by us.
+* it reads <b>Hibernate</b> config file, that has been set up by us.
 * we can retrieve <b>Session</b> object on demand using <b>Session Factory</b>.
 
 <b><span style="color: black;">Session</span></b>:
@@ -82,25 +82,25 @@ Another question arises - what's going on inside this "<b>staging area</b>" and 
 
 Furthermore - what does "<b>entity</b>" even mean?
 
-<b><span style="color: black;">Entity</span></b> - Plain Old Java Object used as a data carry object, which serves us as the wrapper for the fetched record from the database table.
+<b><span style="color: black;">Entity</span></b> - <b>Plain Old Java Object</b> used as a data carry object, which serves us as the wrapper for the fetched record from the database table.
 
-In <span class="inline_text">Hibernate</span> staging area, we can differentiate 4 entity lifecycle <b>states</b>:
+In <span class="inline_text">Hibernate</span> staging area, we can differentiate <b>4</b> entity lifecycle <b>states</b>:
 * <b><span style="color: black;">Transient</span></b> - entity object created, but not staged for any changes. Persistent Context doesn't even know about its existence.
 * <b><span style="color: black;">Managed (Persisted)</span></b> - entity object staged for the changes; currently put into Persistent Context and managed by it.
 * <b><span style="color: black;">Detached</span></b> - entity object not longer recognized by Persistent Context, but managed by it in the past.
 * <b><span style="color: black;">Deleted (Removed)</span></b> - entity object staged for permanent deletion.
 
 ## Query Operation Types
-When working with <span class="inline_text">Hibernate</span>, we have mainly 2 ways in which we can create queries:
+When working with <span class="inline_text">Hibernate</span>, we have mainly 3 ways in which we can create queries:
 * <b><span style="color: black;">Build-in CRUD operations</span></b> - mentioned earlier; we are able to issue them by calling the functions like "<b>.save()</b>" or "<b>.delete()</b>" on <b>Session</b> object.
-* <b><span style="color: black;">HQL Syntax</span></b> - SQL dialect focused not on the database table name and properties, but on the entity object class and fields.
-Allows us to build custom queries.
+* <b><span style="color: black;">HQL Syntax</span></b> - SQL dialect focused not on the database table name and properties, but on the <b>entity object class and fields</b>. Allows us to build custom queries.
+* <b><span style="color: black;">Native SQL Syntax</span></b> - old way doesn't go away; if you are keen on using native SQL queries, you are provided with option to do so.
 
 This way we don't have to write additional code for fundamental operations, unless there is an explicit need (more complicated queries), in which case we allowed
-to create our custom piece of code with the <b>HQL</b> help.
+to create our custom piece of code with the <b>HQL</b> help or by using <b>Native SQL</b>.
 
 ## What's next
-As we know, theory and practice are two different things, so we won’t stop. In the next posts, I will show you how to add, configure, and use <span class="inline_text">Hibernate</span> in your app.
+As we know, theory and practice are two different things, so we won’t stop. In the near future (maybe not in the next post, but be patient), I will show you how to add, configure, and use <span class="inline_text">Hibernate</span> in your app.
 
 Also, we will design a simple database for managing <b>Truck Companies</b> transport orders, which will serve us as a testing example for what we are able to achieve with the <span class="inline_text">Hibernate</span> functionalities.
 

@@ -204,7 +204,7 @@ You will be redirected to the administration panel page:
 </div>
 
 We are near the end, do not retreat! 
-The only thing you must do now is creating a connection between PostgreSQL running on your machine and already opened the pgAdmin4 administration panel.
+The only thing you must do now is create a connection between PostgreSQL running on your machine and already opened pgAdmin4 administration panel.
 
 To make things work, find the option for creating a new server connection:
 
